@@ -1,6 +1,7 @@
 * {
   color: rgba(0,0,0,0.8);
   outline: none;
+  user-select: none;
 }
 
 body {
@@ -49,8 +50,21 @@ body {
   width: 115px;
   height: 230px;
   border-radius: 5px;
-  background: linear-gradient(to bottom, white, #ddd 20%, white 30%, #ddd 31%, white 60%);
+  background: linear-gradient(to bottom, white, #ddd 20%, white 30%, #ddd 31%, white 60%, #eee 90%);
   transform: scaleY(0.97) translateY(3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#panel > span {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #ccc;
+  padding: 15px;
+  text-shadow: 0px 2px 2px white;
 }
 
 #clock {

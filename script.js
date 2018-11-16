@@ -180,11 +180,11 @@ function toggleLight() {
   if (document.querySelector("#darkness").style.opacity === '0') {
     document.querySelector("#darkness").style.opacity = 0.8;
     document.querySelector("#panel").style.transform = 'scaleY(0.97) translateY(-3px)';
-    document.querySelector("#panel").style.background = 'linear-gradient(to top, white, #ddd 20%, white 30%, #ddd 31%, white 60%)';
+    document.querySelector("#panel").style.background = 'linear-gradient(to top, white, #ddd 20%, white 30%, #ddd 31%, white 60%, #eee 90%)';
   } else {
     document.querySelector("#darkness").style.opacity = 0;
     document.querySelector("#panel").style.transform = 'scaleY(0.97) translateY(3px)';
-    document.querySelector("#panel").style.background = 'linear-gradient(to bottom, white, #ddd 20%, white 30%, #ddd 31%, white 60%)';
+    document.querySelector("#panel").style.background = 'linear-gradient(to bottom, white, #ddd 20%, white 30%, #ddd 31%, white 60%, #eee 90%)';
   }
 }
 
