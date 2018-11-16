@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Clock</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+    <div id="darkness"></div>
+
+    <div id="lightSwtich">
+      <div id="underPanel"></div>
+      <div id="panel" onClick="toggleLight()"></div>
+    </div>
+
+    <div id="clock">
+      <div id="body">
+
+        <button id="snoozeButton" onClick="lightUp(2.5)">
+          <div><span>SNOOZE/LIGHT</span></div>
+        </button>
+
+        <button id="setAlarmButton" onClick="setAlarm()">
+          <div><img src="https://png.pngtree.com/svg/20160707/_alarm_icon_55952.png"/></div>
+        </button>
+
+        <div id="border">
+          <div id="screen">
+            <div id="time">
+              <div id="primaryInfo">
+                <span id="hour"></span><span id="timeColon">:</span><span id="minute"></span>
+              </div>
+              <div id="extraInfo">
+                <span id="meridiem"></span>
+                <span id="second"></span>
+              </div>
+            </div>
+            <img id="alarmIndicator" src="https://mbtskoudsalg.com/images/youtube-bell-png.png"/>
+            <div id="dateAndAlarm">
+              <span id="alarmTime">12<span id="alarmColon">:</span>00 PM</span>
+              <span id="day"></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="alarmControls">
+          <select id="alarmHour" placeholder="Hours">
+            <option value="01">1</option>
+            <option value="02">2</option>
+            <option value="03">3</option>
+            <option value="04">4</option>
+            <option value="05">5</option>
+            <option value="06">6</option>
+            <option value="07">7</option>
+            <option value="08">8</option>
+            <option value="09">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          :
+          <select id="alarmMinute"></select>
+          <select id="alarmMeridiem">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div id="stand"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
