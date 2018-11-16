@@ -1,2 +1,2 @@
 # My JS Clock
-A realtime digital clock
+A realtime digital alarm clock
